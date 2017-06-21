@@ -2,7 +2,7 @@
 <head>
     <style>
         div.coloring{
-            background-color:rosybrown;
+            font-weight: bold;
         }
         
 </style>
@@ -16,7 +16,11 @@
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact Us</a>
     </div> <br/> <hr/>
-   <center> <div>
+   <center>
+       <div style="text-align: left">
+           **Required fields are bold**
+       </div>
+       <br/>
         <form action="#" method="POST">
             <div class="coloring">
                 <label id="NameLabel" for="Name">Name: </label>
@@ -31,7 +35,7 @@
                 <label id="Phonelabel" for="Phone">Phone: </label>
                 <input type="text" name="userInput"
            </center> </div><br/>
-            <center><div>
+            <center><div class="coloring">
                 <label id="ReasonLabel" for="Reason">Reason for Inquiry: </label>
                 <select name ="Catering">
                 <option value="Catering">Catering</option>
@@ -40,15 +44,15 @@
                 <option value="Other">Other</option>
                 </select>
             </div> <br/>
-            <div class="coloring" >
+            <div>
               <label id="AdditionalInfo" for="AdditionalInfo"> Additional Information: </label>
                <textarea>Additional Information</textarea>
             </div><br/>
-            <div>
+            <div class="coloring">
                 Have you been to the restaurant? <input type="radio" name="answer" value="Yes" checked/>Yes
                 <input type="radio" name="answer" value="No"/>No
             </div> <br/>
-            <div class="coloring">
+            <div>
                Best days to contact you: <input type="checkbox" name="bestDays" value="Monday"/> M
                <input type="checkbox" name="bestDays" value="Tuesday"/> T
                <input type="checkbox" name="bestDays" value="Wednesday"/> W
